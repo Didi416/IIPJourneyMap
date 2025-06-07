@@ -54,7 +54,7 @@
             border: 1px solid #000000;
         }
 
-        .info-card h1 {
+        .info-card h1 { 
             color: #045e81;
             margin-bottom: 15px;
             font-weight: 600;
@@ -66,14 +66,14 @@
             line-height: 1.6;
         }
 
-        .phases-grid {
+        .stages-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 25px;
             margin-bottom: 30px;
         }
 
-        .phase-card {
+        .stage-card {
             background: white;
             border-radius: 20px;
             padding: 30px;
@@ -85,7 +85,7 @@
             border-left: 5px solid transparent;
         }
 
-        .phase-card::before {
+        .stage-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -96,24 +96,24 @@
             transition: left 0.6s;
         }
 
-        .phase-card:hover::before {
+        .stage-card:hover::before {
             left: 100%;
         }
 
-        .phase-card:hover {
+        .stage-card:hover {
             transform: translateY(-12px);
             box-shadow: 0 25px 50px rgba(0,0,0,0.2);
         }
 
-        .phase-card.phase-1 { border-left-color: #000000; }
-        .phase-card.phase-2 { border-left-color: #000000; }
-        .phase-card.phase-3 { border-left-color: #000000; }
-        .phase-card.phase-4 { border-left-color: #000000; }
-        .phase-card.phase-5 { border-left-color: #000000; }
-        .phase-card.extra-tips { border-left-color: #000000; }
-        .phase-card.core-principles { border-left-color: #000000; }
+        .stage-card.stage-1 { border-left-color: #000000; }
+        .stage-card.stage-2 { border-left-color: #000000; }
+        .stage-card.stage-3 { border-left-color: #000000; }
+        .stage-card.stage-4 { border-left-color: #000000; }
+        .stage-card.stage-5 { border-left-color: #000000; }
+        .stage-card.extra-tips { border-left-color: #000000; }
+        .stage-card.core-principles { border-left-color: #000000; }
 
-        .phase-number {
+        .stage-number {
             display: inline-block;
             width: 50px;
             height: 50px;
@@ -128,20 +128,20 @@
             margin-bottom: 20px;
         }
 
-        .phase-card h3 {
+        .stage-card h3 {
             color: #333;
             font-size: 1.4em;
             margin-bottom: 15px;
             font-weight: 600;
         }
 
-        .phase-card p {
+        .stage-card p {
             color: #666;
             font-size: 1.1em;
             line-height: 1.6;
         }
 
-        .phase-tagline {
+        .stage-tagline {
             background: linear-gradient(45deg, #045e81 0%, #023144 100%);
             color: white;
             padding: 8px 16px;
@@ -354,7 +354,7 @@
         } */
 
         @media (max-width: 768px) {
-            .phases-grid {
+            .stages-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
@@ -386,65 +386,65 @@
         <div class="info-card">
             <h1>Dear Future Self,</h1>
             <p>As you embark on your next transdisciplinary innovation project with an industry partner, this journey map will serve as your compass through the complex terrain ahead. If you remember the exciting 3 months during IIP, we had the privilege of working with The Strategy Group on a project that was working to shift mindsets around AI to improve workplace efficiencies across the industry. 
-               The duration of the AI User Readiness and Awareness project (AURA) taught me (and you!) valuable lessons about navigating challenge spaces, managing stakeholder and client relationships, and delivering meaningful solutions. I’ve prepared here a timeline of methodologies, approaches, processes, and principles to help you along in your new project. 
+               The duration of the AI User Readiness and Awareness project (AURA) taught me (and you!) valuable lessons about navigating challenge spaces, managing stakeholder and client relationships, and delivering meaningful solutions. I’ve prepared here a timeline of methodologies, approaches, processes, and principles to help you along in your new project. (Click the cards to view more in-depth!)
             </p>
         </div>
         
-        <div class="phases-grid">
-            <!-- Phase 1 -->
-            <div class="phase-card phase-1" onclick="openModal('phase1Modal')">
-                <div class="phase-number">1</div>
+        <div class="stages-grid">
+            <!-- Stage 1 -->
+            <div class="stage-card stage-1" onclick="openModal('stage1Modal')">
+                <div class="stage-number">1</div>
                 <h3>Problem Space Exploration</h3>
                 <p>Navigate the messy, non-linear journey of innovation while identifying all stakeholders and system relationships.</p>
-                <span class="phase-tagline">Embrace the Non-Linear</span>
+                <span class="stage-tagline">Embrace the Non-Linear</span>
             </div>
 
-            <!-- Phase 2 -->
-            <div class="phase-card phase-2" onclick="openModal('phase2Modal')">
-                <div class="phase-number">2</div>
+            <!-- Stage 2 -->
+            <div class="stage-card stage-2" onclick="openModal('stage2Modal')">
+                <div class="stage-number">2</div>
                 <h3>Deep Research & Insights</h3>
                 <p>Balance primary interviews with secondary research to uncover breakthrough insights that shape your intervention.</p>
-                <span class="phase-tagline">Let Users Guide Innovation</span>
+                <span class="stage-tagline">Let Users Guide Innovation</span>
             </div>
 
-            <!-- Phase 3 -->
-            <div class="phase-card phase-3" onclick="openModal('phase3Modal')">
-                <div class="phase-number">3</div>
+            <!-- Stage 3 -->
+            <div class="stage-card stage-3" onclick="openModal('stage3Modal')">
+                <div class="stage-number">3</div>
                 <h3>Ideation & Concept Development</h3>
                 <p>Leverage team diversity and creative methods to break through mental blocks and generate unexpected solutions.</p>
-                <span class="phase-tagline">Blue-Sky Thinking, Grounded Evaluation</span>
+                <span class="stage-tagline">Blue-Sky Thinking, Grounded Evaluation</span>
             </div>
 
-            <!-- Phase 4 -->
-            <div class="phase-card phase-4" onclick="openModal('phase4Modal')">
-                <div class="phase-number">4</div>
+            <!-- Stage 4 -->
+            <div class="stage-card stage-4" onclick="openModal('stage4Modal')">
+                <div class="stage-number">4</div>
                 <h3>Prototyping & Development</h3>
                 <p>Choose your medium strategically and embrace rapid prototyping to test core assumptions quickly.</p>
-                <span class="phase-tagline">Prototype for Learning</span>
+                <span class="stage-tagline">Prototype for Learning</span>
             </div>
 
-            <!-- Phase 5 -->
-            <div class="phase-card phase-5" onclick="openModal('phase5Modal')">
-                <div class="phase-number">5</div>
+            <!-- Stage 5 -->
+            <div class="stage-card stage-5" onclick="openModal('stage5Modal')">
+                <div class="stage-number">5</div>
                 <h3>Testing & Feedback Integration</h3>
                 <p>Test with minimal guidance and act on constructive feedback immediately to improve market readiness.</p>
-                <span class="phase-tagline">User-Centered Validation</span>
+                <span class="stage-tagline">User-Centered Validation</span>
             </div>
 
             <!-- Extra Tips -->
-            <div class="phase-card extra-tips" onclick="openModal('tipsModal')">
-                <div class="phase-number">💡</div>
+            <div class="stage-card extra-tips" onclick="openModal('tipsModal')">
+                <div class="stage-number">💡</div>
                 <h3>Extra Tips & Collaboration</h3>
                 <p>Managing transdisciplinary innovation, industry partnerships, and team dynamics effectively.</p>
-                <span class="phase-tagline">Collaboration Strategies</span>
+                <span class="stage-tagline">Collaboration Strategies</span>
             </div>
 
             <!-- Core Principles -->
-            <div class="phase-card core-principles" onclick="openModal('principlesModal')">
-                <div class="phase-number">⭐</div>
+            <div class="stage-card core-principles" onclick="openModal('principlesModal')">
+                <div class="stage-number">⭐</div>
                 <h3>Core Principles</h3>
                 <p>Five fundamental principles to guide your innovation journey and measure success by impact.</p>
-                <span class="phase-tagline">Future Self Guidance</span>
+                <span class="stage-tagline">Keep In Mind</span>
             </div>
         </div>
         <div class="info-card">
@@ -453,13 +453,13 @@
         </div>
     </div>
 
-    <!-- Phase 1 Modal -->
-    <div id="phase1Modal" class="modal">
+    <!-- Stage 1 Modal -->
+    <div id="stage1Modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Phase 1: Problem Space Exploration</h2>
+                <h2>Stage 1: Problem Space Exploration</h2>
                 <div class="modal-subtitle">Embrace the Non-Linear Journey</div>
-                <span class="close" onclick="closeModal('phase1Modal')">&times;</span>
+                <span class="close" onclick="closeModal('stage1Modal')">&times;</span>
             </div>
             <div class="modal-body">
                 <p>Your first instinct will be to create a linear path from problem to solution. Resist this urge. Innovation is messy, and you'll encounter 'stuck moments', frustrations, failed ideas and more before breakthrough insights emerge. Accept that your journey will be far from linear and prepare mentally for the emotional rollercoaster ahead.</p>
@@ -467,54 +467,59 @@
                 <div class="methods-section">
                     <h4>Key Processes/Approaches/Methods:</h4>
                     <ul class="methods-list">
-                        <li><strong>Actant Mapping:</strong> Start here to identify all stakeholders, both human and non-human elements in your system. Don't limit yourself to obvious players – the most impactful solutions often address overlooked actants.</li>
-                        <li><strong>System Mapping and Actor Constellations:</strong> Use these methods to understand relationships and power dynamics between stakeholders. Identify who is most affected, currently, as well as secondary.</li>
-                        <li><strong>Miro Board Setup and Organisation:</strong> Set up a digital workspace as your "central hub" from day one. Allocate sections for each week, incorporate weekly challenges, and maintain a running to-do list.</li>
+                        <li><strong>Actant Mapping:</strong> Start here to identify all stakeholders, both human and non-human elements in your system. Don't limit yourself to obvious players – the most impactful solutions often address overlooked actants. But also note that a ‘one-size-fits-all’ approach can also limit the success of your intervention. 
+                            Be flexible and work with your clients to determine the best way forward!</li>
+                        <li><strong>System Mapping and Actor Constellations:</strong> Use these methods to understand relationships and power dynamics between stakeholders. Identify who is most affected, currently, as well as secondary, as this will help you identify where your intervention can have maximum impact.</li>
+                        <li><strong>Miro Board Setup and Organisation:</strong> Set up a digital workspace as your "central hub" from day one. Miro works exceptionally well for teams and is accepted across the industry. Allocate sections for each week, incorporate weekly challenges, and maintain a running to-do list. 
+                            Keep a record of all methods, explorations, research and ideas in an organised timeline, good for future reference and overall management. This organisation will prevent overwhelm when information and ideas start flowing in!</li>
                     </ul>
                 </div>
 
                 <div class="principle-box">
                     <h4>Principle: Centre Your Stakeholders</h4>
-                    <p>Place your key stakeholders at the centre of your intervention from the beginning. In the AURA project, focusing on TSG employees, TSG clients, human agency, and attitudes toward AI ensured the solution remained "effective and highly targeted."</p>
+                    <p>Place your key stakeholders at the centre of your intervention from the beginning. In the AURA project, focusing on TSG employees, TSG clients, human agency, and attitudes toward AI ensured the solution remained "effective and highly targeted." 
+                        Your solution's success depends on how well you understand and serve these central actants, throughout the whole process.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Phase 2 Modal -->
-    <div id="phase2Modal" class="modal">
+    <!-- Stage 2 Modal -->
+    <div id="stage2Modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Phase 2: Deep Research and Insight Generation</h2>
+                <h2>Stage 2: Deep Research and Insight Generation</h2>
                 <div class="modal-subtitle">Balance Primary and Secondary Research Strategically</div>
-                <span class="close" onclick="closeModal('phase2Modal')">&times;</span>
+                <span class="close" onclick="closeModal('stage2Modal')">&times;</span>
             </div>
             <div class="modal-body">
-                <p>Don't underestimate the power of conversations with real people. Primary research through interviews across various industries, generations, and organisational levels will reveal insights that desk alone research cannot. However, complement this with extensive secondary research to understand the broader landscape.</p>
+                <p>Don't underestimate the power of conversations with real people. Primary research through interviews across various industries, generations, and organisational levels will reveal insights that desk alone research cannot. However, complement this with extensive secondary research to understand the broader landscape - in our case, 
+                    the overwhelming array of available AI tools was a key insight gained from various interviews that shaped our final intervention.</p>
 
                 <div class="methods-section">
                     <h4>Key Processes/Approaches/Methods:</h4>
                     <ul class="methods-list">
-                        <li><strong>Theme Clustering and Affinity Mapping:</strong> After conducting interviews, use these methods to identify recurring themes. This is where breakthrough insights emerge.</li>
+                        <li><strong>Theme Clustering and Affinity Mapping:</strong> After conducting interviews, use these methods to identify recurring themes. This is where breakthrough insights emerge. Through organising insights by themes, you will be able to find deeper connections and key obstacles that you may not have found previously. </li>
                         <li><strong>Ball in the Basin Method:</strong> Use this to understand system dynamics and identify leverage points. Our realisation that the solution required a "mindset shift" rather than just information delivery came from this method's focus on balancing and reinforcing feedback loops.</li>
                     </ul>
                 </div>
 
                 <div class="principle-box">
                     <h4>Principle: Let Users Guide Your Innovation</h4>
-                    <p>Your interviews will reveal not just what studies or reports say about the problem space, but actually what the users themselves feel they need. We discovered that people had basic AI understanding but were held back by fears about accuracy and privacy.</p>
+                    <p>Your interviews will reveal not just what studies or reports say about the problem space, but actually what the users themselves feel they need. We discovered that people had basic AI understanding but were held back by fears about accuracy and privacy. 
+                        More importantly, we found they were generally positive about AI's potential when implemented correctly - this insight shaped AURA's entire approach.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Phase 3 Modal -->
-    <div id="phase3Modal" class="modal">
+    <!-- Stage 3 Modal -->
+    <div id="stage3Modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Phase 3: Ideation and Concept Development</h2>
+                <h2>Stage 3: Ideation and Concept Development</h2>
                 <div class="modal-subtitle">Leverage Team Diversity During Stuck Moments</div>
-                <span class="close" onclick="closeModal('phase3Modal')">&times;</span>
+                <span class="close" onclick="closeModal('stage3Modal')">&times;</span>
             </div>
             <div class="modal-body">
                 <p>When creativity stagnates, lean into your team's diverse perspectives. Use rapid ideation methods to break through mental blocks and generate unexpected connections. The concept of AURA emerged from quote-based ideation when we felt stuck, proving that breakthrough ideas often come when you least expect them.</p>
@@ -522,36 +527,39 @@
                 <div class="methods-section">
                     <h4>Key Processes/Approaches/Methods:</h4>
                     <ul class="methods-list">
-                        <li><strong>Crazy 8s Ideation and Dotmocracy:</strong> Apply these during "stuck moments" to boost individual productivity and harness collective creativity. Use Dotmocracy to democratically converge on ideas that best target your core questions.</li>
-                        <li><strong>Quote-Based Ideation:</strong> This method, recommended by our mentor, was transformational to say the least. Select powerful quotes from interviews that capture the essence of user needs, then rapidly ideate solutions around them.</li>
-                        <li><strong>"Yes, And..." Method:</strong> As you approach prototyping, use this method to question potential pitfalls and opportunities constructively and optimistically.</li>
+                        <li><strong>Crazy 8s Ideation and Dotmocracy:</strong> Apply these during "stuck moments" to boost individual productivity and harness collective creativity. Use Dotmocracy to democratically converge on ideas that best target your core questions. We typically used this combination when we needed to refocus and drive innovation forward.</li>
+                        <li><strong>Quote-Based Ideation:</strong> : This method, recommended by our mentor, was transformational to say the least. Select powerful quotes from interviews that capture the essence of user needs, then rapidly ideate solutions around them. This grounds your innovation in real human experiences rather than assumptions.</li>
+                        <li><strong>"Yes, And..." Method:</strong> As you approach prototyping, use this method to question potential pitfalls and opportunities constructively and optimistically. Maintain an ‘enhance-over-criticise’ tone while ensuring your solution addresses the core challenge, as well as client and user requirements.</li>
                     </ul>
                 </div>
 
                 <div class="principle-box">
                     <h4>Principle: Embrace Blue-Sky Thinking with Grounded Evaluation</h4>
-                    <p>Allow for unrestricted creativity during ideation but always filter ideas through your stakeholder lens, core insights and realistic grounding. The three concepts we identified emerged from creative sessions but were validated against user needs and stakeholder requirements.</p>
+                    <p>Allow for unrestricted creativity during ideation but always filter ideas through your stakeholder lens, core insights and realistic grounding. The three concepts we identified (AI tool index, gamification elements, and success stories) emerged from creative sessions but were validated against user needs and stakeholder requirements.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Phase 4 Modal -->
-    <div id="phase4Modal" class="modal">
+    <!-- Stage 4 Modal -->
+    <div id="stage4Modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Phase 4: Prototyping and Development</h2>
+                <h2>Stage 4: Prototyping and Development</h2>
                 <div class="modal-subtitle">Choose Your Medium Strategically</div>
-                <span class="close" onclick="closeModal('phase4Modal')">&times;</span>
+                <span class="close" onclick="closeModal('stage4Modal')">&times;</span>
             </div>
             <div class="modal-body">
-                <p>Always consider how your solution will be integrated within your industry partner's existing ecosystem and their clients' workflows. Start with accessible, lower-level prototyping platforms that allow rapid iteration but be prepared to transition to more sophisticated tools if user experience and testing demands it.</p>
+                <p>Always consider how your solution will be integrated within your industry partner's existing ecosystem and their clients' workflows. Start with accessible, lower-level prototyping platforms that allow rapid iteration but be prepared to transition to more sophisticated tools if user experience and testing demands it. 
+                    Your prototype medium should balance development speed with real-world implementation constraints and technical requirements. </p>
 
                 <div class="methods-section">
                     <h4>Key Processes/Approaches/Methods:</h4>
                     <ul class="methods-list">
-                        <li><strong>Rapid Prototyping with Core Elements:</strong> Identify the minimum viable elements that communicate your value proposition effectively. Focus on 3-5 key components that demonstrate core functionality rather than attempting comprehensive feature development.</li>
-                        <li><strong>"Fail Fast" Mentality:</strong> Embrace extensive prototyping specifically to test assumptions and uncover limitations before significant resource investment. Create multiple versions quickly to identify potential issues like over-complexity, user fatigue, or accessibility barriers.</li>
+                        <li><strong>Rapid Prototyping with Core Elements:</strong> Identify the minimum viable elements that communicate your value proposition effectively. Focus on 3-5 key components that demonstrate core functionality rather than attempting comprehensive feature development. 
+                            Ask yourself: "What are the essential elements that prove this concept works?" Build those first, make it fancy later!</li>
+                        <li><strong>"Fail Fast" Mentality:</strong> Embrace extensive prototyping specifically to test assumptions and uncover limitations before significant resource investment. Create multiple versions quickly to identify potential issues like over-complexity, user fatigue, or accessibility barriers. 
+                            This approach saves time and resources while revealing design insights that aren't apparent in conceptual phases.</li>
                     </ul>
                 </div>
 
@@ -563,13 +571,13 @@
         </div>
     </div>
 
-    <!-- Phase 5 Modal -->
-    <div id="phase5Modal" class="modal">
+    <!-- Stage 5 Modal -->
+    <div id="stage5Modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Phase 5: Testing and Feedback Integration</h2>
+                <h2>Stage 5: Testing and Feedback Integration</h2>
                 <div class="modal-subtitle">Test with Minimal Guidance</div>
-                <span class="close" onclick="closeModal('phase5Modal')">&times;</span>
+                <span class="close" onclick="closeModal('stage5Modal')">&times;</span>
             </div>
             <div class="modal-body">
                 <p>When testing your prototype, resist the urge to over-explain your solution. We offered AURA to 12 prospective users with minimal guidance about its purpose, which revealed genuine user perceptions and usability issues we might have missed with guided testing.</p>
@@ -577,8 +585,8 @@
                 <div class="methods-section">
                     <h4>Key Processes/Approaches/Methods:</h4>
                     <ul class="methods-list">
-                        <li><strong>Structured User Testing:</strong> Create systematic feedback collection that covers both usability and content perception. Ask open-ended questions about purpose and value before diving into specific functionality feedback.</li>
-                        <li><strong>Navigation and Accessibility Assessment:</strong> Pay special attention to user journey issues. Our feedback revealed navigation problems that were invisible to us as creators but critical barriers for users.</li>
+                        <li><strong>Structured User Testing:</strong> Create systematic feedback collection methods that covers both usability and content perception. Ask open-ended questions about purpose and value before diving into specific functionality feedback.</li>
+                        <li><strong>Navigation and Accessibility Assessment:</strong> Pay special attention to user journey issues. Our feedback revealed navigation problems that were invisible to us as creators but critical barriers for users trying to find targeted tools and advice.</li>
                     </ul>
                 </div>
 
@@ -605,9 +613,9 @@
                 <div class="methods-section">
                     <h4>Key Collaboration Strategies:</h4>
                     <ul class="methods-list">
-                        <li><strong>Regular Stakeholder Check-ins:</strong> Work directly with your industry partner to identify and validate key actants throughout the process.</li>
-                        <li><strong>Value Proposition Alignment:</strong> Ensure your solution supports your partner's broader business strategy. AURA was designed to enhance TSG's AI policy offering and support their commitment to an AI-ready workforce.</li>
-                        <li><strong>Sustainability Planning:</strong> Consider economic, social, environmental, and ethical factors from the beginning. Discuss implementation models early to ensure viability for all stakeholders.</li>
+                        <li><strong>Regular Stakeholder Check-ins:</strong> Work directly with your industry partner to identify and validate key actants throughout the process. TSG's involvement in stakeholder mapping ensured our solution targeted the right audiences.</li>
+                        <li><strong>Value Proposition Alignment:</strong> Ensure your solution supports your partner's broader business strategy. AURA was designed to enhance TSG's AI policy offering and support their commitment to an AI-ready workforce, creating mutual value.</li>
+                        <li><strong>Sustainability Planning:</strong> Consider economic, social, environmental, and ethical factors from the beginning. Discuss implementation models (like our "software as a service" approach) early to ensure viability for all stakeholders.</li>
                     </ul>
                 </div>
 
@@ -618,8 +626,8 @@
                     <h4>Key Takeaways for Future Collaboration:</h4>
                     <ul class="methods-list">
                         <li><strong>Shared Commitment Over Individual Brilliance:</strong> Success comes from team persistence and willingness to keep iterating, even when things don't go to plan.</li>
-                        <li><strong>Communication as Foundation:</strong> Stay committed and communicative during difficult periods. Our most challenging moments forced better collaboration.</li>
-                        <li><strong>Iteration as Strategy:</strong> Embrace continuous refinement rather than seeking perfect initial solutions. AURA became more thoughtful and realistic through persistent iteration.</li>
+                        <li><strong>Communication as Foundation:</strong> Stay committed and communicative during difficult periods. Our most challenging moments forced better collaboration and gave us practical understanding of co-design principles.</li>
+                        <li><strong>Iteration as Strategy:</strong> Embrace continuous refinement rather than seeking perfect initial solutions. AURA became "more thoughtful and realistic, rooted in actual user needs rather than assumptions" through persistent iteration.</li>
                     </ul>
                 </div>
             </div>
@@ -642,10 +650,6 @@
                     <li><strong>Plan for Sustainability:</strong> Consider long-term viability across economic, social, environmental, and ethical dimensions from the beginning. Short-term solutions that create long-term problems serve no one.</li>
                     <li><strong>Measure Success by Impact, Not Output:</strong> The value of your innovation lies not in how clever or complex it is, but in how effectively it creates positive change for your stakeholders and addresses the original challenge.</li>
                 </ol>
-
-                <!-- <div class="quote-box">
-                    <p><strong>Remember:</strong> innovation is not about having all the answers from the start. It's about asking better questions, staying curious, and persistently working toward solutions that truly serve human needs while creating sustainable value for all stakeholders involved.</p>
-                </div> -->
             </div>
         </div>
     </div>
@@ -684,7 +688,7 @@
 
         // Add click animation to cards
         document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.phase-card');
+            const cards = document.querySelectorAll('.stage-card');
             cards.forEach(card => {
                 card.addEventListener('click', function() {
                     this.style.transform = 'scale(0.98) translateY(-12px)';
