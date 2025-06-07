@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey Map for Your Future Self</title>
+    <title>Journey Map for My Future Self (IIP Assessment 3C)</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #045e81 0%, #023144 100%);
             min-height: 100vh;
             color: #333;
             overflow-x: hidden;
@@ -50,7 +50,7 @@
             margin: 4rem 0;
         }
 
-        .path-line {
+        /* .path-line {
             position: absolute;
             top: 50%;
             left: 0;
@@ -59,7 +59,7 @@
             background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
             border-radius: 2px;
             z-index: 1;
-        }
+        } */
 
         .phase {
             position: relative;
@@ -76,7 +76,7 @@
         }
 
         .phase-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.80);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 2rem;
@@ -97,7 +97,7 @@
             position: absolute;
             top: -15px;
             left: 2rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #045e81, #023144);
             color: white;
             width: 40px;
             height: 40px;
@@ -113,7 +113,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #023447;
             margin-top: 0.5rem;
         }
 
@@ -171,12 +171,11 @@
             padding: 1.5rem;
             border-radius: 15px;
             margin-top: 1rem;
-            transform: rotate(-1deg);
             transition: all 0.3s ease;
         }
 
         .principle-card:hover {
-            transform: rotate(0deg) scale(1.02);
+            transform: scale(1.05);
         }
 
         .interactive-timeline {
@@ -197,11 +196,11 @@
             background: rgba(255,255,255,0.5);
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 2px solid white;
+            border: 2px solid black;
         }
 
         .timeline-dot.active {
-            background: #ff6b6b;
+            background: #000000;
             transform: scale(1.3);
         }
 
@@ -223,7 +222,7 @@
             opacity: 1;
         }
 
-        .toggle-view {
+        /* .toggle-view {
             position: fixed;
             top: 2rem;
             right: 2rem;
@@ -239,7 +238,7 @@
         .toggle-view:hover {
             background: white;
             transform: scale(1.05);
-        }
+        } */
 
         @media (max-width: 768px) {
             .phase-card {
@@ -286,11 +285,11 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Journey Map for Your Future Self</h1>
+            <h1>Journey Map for My Future Self</h1>
             <p>Navigate transdisciplinary innovation with confidence and creativity</p>
         </div>
 
-        <button class="toggle-view" onclick="toggleView()">📋 Switch View</button>
+        <!-- <button class="toggle-view" onclick="toggleView()">📋 Switch View</button> -->
 
         <div class="interactive-timeline">
             <div class="timeline-dot active" onclick="scrollToPhase(0)"></div>
